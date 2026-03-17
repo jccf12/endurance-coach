@@ -93,14 +93,14 @@ The JSON structure must be:
       "date_offset": number (days from plan start date, 0-indexed),
       "session_type": "run" | "bike" | "swim" | "strength" | "brick" | "hyrox" | "functional" | "rest" | "cross-training",
       "title": "string — short session title (max 8 words)",
-      "description": "string — 1-2 sentence workout description with key targets only",
+      "description": "string — max 12 words, key targets only (e.g. '10km easy run at Z2, conversational pace')",
       "duration_minutes": number | null,
       "distance": number | null,
       "distance_unit": "km",
       "intensity": "recovery" | "easy" | "moderate" | "hard" | "race-pace",
       "heart_rate_zone": "Z1" | "Z2" | "Z3" | "Z4" | "Z5" | null,
-      "pace_target": "string | null — e.g. '5:30-6:00/km' or 'RPE 6-7'",
-      "notes": "string | null — one coaching note if truly necessary, otherwise null"
+      "pace_target": "string | null — short, e.g. '5:30/km' or 'RPE 7'",
+      "notes": null
     }
   ]
 }

@@ -10,7 +10,7 @@ export function getClient(): Anthropic {
 
 // Use Haiku for chat (cheap), Sonnet for plan generation (quality)
 const CHAT_MODEL = "claude-haiku-4-5-20251001";
-const PLAN_MODEL = "claude-sonnet-4-6";
+const PLAN_MODEL = "claude-haiku-4-5-20251001";
 
 export async function anthropicChat(
   systemPrompt: string,
