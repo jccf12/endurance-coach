@@ -4,6 +4,8 @@ import { generateTrainingPlan } from "@/lib/ai";
 import type { OnboardingAnswers } from "@/types";
 import { addDays } from "date-fns";
 
+export const maxDuration = 60;
+
 export async function POST(request: NextRequest) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
